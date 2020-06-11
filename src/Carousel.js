@@ -29,7 +29,7 @@ class Carousel extends React.Component {
         <div className="carousel-smaller">
           {photos.map((photo, index) => (
             <img
-              key={photo}
+              key={index}
               onClick={this.handleIndexClick}
               data-index={index}
               src={photo}
